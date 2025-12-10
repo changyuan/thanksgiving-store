@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>好天气的博客 | Good Grief Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ZCOOL KuaiLe for headlines (handwritten style), Noto Serif SC for body (typewriter style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Noto Serif SC', serif; /* Typewriter style for body in Chinese */
+        background-color: #fdf6e3; /* Warm paper tone */
+      }
+      h1, h2, h3, h4, h5, h6, .handwritten {
+        font-family: 'ZCOOL KuaiLe', cursive; /* Peanuts-style handwriting in Chinese */
+      }
+      .zig-zag-bg {
+        background-color: #FACC15;
+        background-image: linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, transparent 25%);
+        background-position:  10px 0, 10px 0, 0 0, 0 0;
+        background-size: 40px 40px;
+        background-repeat: repeat;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
